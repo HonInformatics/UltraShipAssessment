@@ -1,0 +1,157 @@
+.employee-tile {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.employee-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.tile-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.tile-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto; /* Center if needed, but flex layout handles it */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #e3f2fd;
+  color: #1976d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.tile-options {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.bun-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #777;
+  padding: 0 5px;
+  line-height: 1;
+}
+
+.bun-button:hover {
+  color: #333;
+}
+
+.options-menu {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 5px 0;
+  z-index: 10;
+  min-width: 120px;
+  text-align: left;
+}
+
+.options-menu button {
+  display: block;
+  width: 100%;
+  padding: 8px 15px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+.options-menu button:hover {
+  background-color: #f5f5f5;
+}
+
+.options-menu button.delete-option {
+  color: #d32f2f;
+}
+
+.tile-content {
+  margin-top: 50px; /* Space for avatar */
+  width: 100%;
+}
+
+.tile-content h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.tile-role {
+  color: #666;
+  font-size: 14px;
+  margin: 0 0 5px;
+}
+
+.tile-dept {
+  color: #888;
+  font-size: 12px;
+  margin: 0 0 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tile-status {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.tile-status.active {
+  background-color: #e6f7e6;
+  color: #2e7d32;
+}
+
+.tile-status.inactive {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.tile-status.on-leave {
+  background-color: #fff3e0;
+  color: #ef6c00;
+}
