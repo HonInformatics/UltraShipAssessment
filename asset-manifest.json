@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/UltraShipAssessment/static/css/main.0cccb4e6.css",
+    "main.js": "/UltraShipAssessment/static/js/main.3e8eb475.js",
+    "static/js/453.8d7292da.chunk.js": "/UltraShipAssessment/static/js/453.8d7292da.chunk.js",
+    "index.html": "/UltraShipAssessment/index.html",
+    "main.0cccb4e6.css.map": "/UltraShipAssessment/static/css/main.0cccb4e6.css.map",
+    "main.3e8eb475.js.map": "/UltraShipAssessment/static/js/main.3e8eb475.js.map",
+    "453.8d7292da.chunk.js.map": "/UltraShipAssessment/static/js/453.8d7292da.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0cccb4e6.css",
+    "static/js/main.3e8eb475.js"
+  ]
+}
